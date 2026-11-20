@@ -43,6 +43,18 @@ th{background:var(--card)}
 a{color:var(--accent)}
 footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);color:var(--mut);font-size:.85rem}
 .warn{background:var(--card);border-left:3px solid var(--demo);border-radius:0 8px 8px 0;padding:10px 14px;margin:14px 0}
+
+@media(max-width:640px){
+  table,tbody,tr,td{display:block;width:100%;box-sizing:border-box}
+  table{min-width:0;border-collapse:separate;border-spacing:0}
+  tr:has(th){display:none}
+  tr{margin:0 0 18px;border:1px solid #ddd;border-radius:10px;overflow:hidden}
+  td{border:0;border-bottom:1px solid #eee;padding:12px 14px;overflow-wrap:anywhere}
+  td:last-child{border-bottom:0}
+  td::before{content:attr(data-label);display:block;font-size:12px;font-weight:700;color:#555;margin-bottom:5px}
+  pre{white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word;max-width:100%;box-sizing:border-box}
+  .qrbox,svg{max-width:100%;box-sizing:border-box}
+}
 </style>
 </head>
 <body>
@@ -121,9 +133,9 @@ https://i.delta.chat/#FINGERPRINT&amp;a=ADDRESS&amp;g=GROUPNAME&amp;x=GROUPID&am
 <p class="small mut">Prices observed 20 Nov 2026 on the linked Indonesian listings; stock and promos change, verify at checkout. No purchase has been made and these are not affiliate links.</p>
 <table>
 <tr><th>Band</th><th>Example</th><th>What you get</th><th>Observed price</th></tr>
-<tr><td>Thermal label, monochrome</td><td><a href="https://www.tokopedia.com/niimbot/printer-label-thermal-bluetooth-niimbot-b21-cetak-harga-barcode-untuk-toko-gudang-ukm-1732440836856972507">Niimbot B21</a> (official store; a <a href="https://www.tokopedia.com/sumberlezat/niimbot-b21-mini-portable-wireless-bluetooth-label-thermal-printer">285-review seller</a> listed Rp700.000)</td><td>203 dpi, inkless, 20-50 mm die-cut sticker labels, Bluetooth app with QR generation and templates. Refill labels about Rp234.900 for 3 rolls (sizes include 50x30 and 50x80 mm).</td><td>Rp1.002.000-1.090.000 with label rolls</td></tr>
-<tr><td>Pocket thermal, monochrome</td><td><a href="https://www.tokopedia.com/nadaraolshop/paperang-p2s-mini-bluetooth-thermal-photo-printer-300dpi-upgrade-p2">Paperang P2S</a></td><td>300 dpi pocket printer on 57 mm rolls (continuous, not die-cut labels). Sharper text/QR than 203 dpi.</td><td>Rp799.000 on the linked Tokopedia listing</td></tr>
-<tr><td>Photo card, color</td><td><a href="https://www.tokopedia.com/canon-indonesia/canon-selphy-photo-printer-cp1500-black">Canon Selphy CP1500</a> (official store)</td><td>Dye-sublimation, 300 dpi color, laminated prints rated to last. Its layout app can add a QR. <strong>Important extras:</strong> the box only includes the postcard-size cassette. Real name-card prints (54x86 mm) need the PCC-CP400 card cassette (sold separately) plus card-size ink/paper sets (KC-36IP cards, KC-18IF card stickers, KC-18IS square, KC-18IL mini). <a href="https://www.canon-europe.com/printers/selphy-cp1500/specifications/">Canon spec</a>; accessory availability varies by region, so check the cassette and KC-36IP stock locally before choosing this band.</td><td>Rp3.629.000 (list Rp5.599.000), printer only; cassette and card media extra</td></tr>
+<tr><td data-label="Band">Thermal label, monochrome</td><td data-label="Example"><a href="https://www.tokopedia.com/niimbot/printer-label-thermal-bluetooth-niimbot-b21-cetak-harga-barcode-untuk-toko-gudang-ukm-1732440836856972507">Niimbot B21</a> (official store; a <a href="https://www.tokopedia.com/sumberlezat/niimbot-b21-mini-portable-wireless-bluetooth-label-thermal-printer">285-review seller</a> listed Rp700.000)</td><td data-label="What you get">203 dpi, inkless, 20-50 mm die-cut sticker labels, Bluetooth app with QR generation and templates. Refill labels about Rp234.900 for 3 rolls (sizes include 50x30 and 50x80 mm).</td><td data-label="Observed price">Rp1.002.000-1.090.000 with label rolls</td></tr>
+<tr><td data-label="Band">Pocket thermal, monochrome</td><td data-label="Example"><a href="https://www.tokopedia.com/nadaraolshop/paperang-p2s-mini-bluetooth-thermal-photo-printer-300dpi-upgrade-p2">Paperang P2S</a></td><td data-label="What you get">300 dpi pocket printer on 57 mm rolls (continuous, not die-cut labels). Sharper text/QR than 203 dpi.</td><td data-label="Observed price">Rp799.000 on the linked Tokopedia listing</td></tr>
+<tr><td data-label="Band">Photo card, color</td><td data-label="Example"><a href="https://www.tokopedia.com/canon-indonesia/canon-selphy-photo-printer-cp1500-black">Canon Selphy CP1500</a> (official store)</td><td data-label="What you get">Dye-sublimation, 300 dpi color, laminated prints rated to last. Its layout app can add a QR. <strong>Important extras:</strong> the box only includes the postcard-size cassette. Real name-card prints (54x86 mm) need the PCC-CP400 card cassette (sold separately) plus card-size ink/paper sets (KC-36IP cards, KC-18IF card stickers, KC-18IS square, KC-18IL mini). <a href="https://www.canon-europe.com/printers/selphy-cp1500/specifications/">Canon spec</a>; accessory availability varies by region, so check the cassette and KC-36IP stock locally before choosing this band.</td><td data-label="Observed price">Rp3.629.000 (list Rp5.599.000), printer only; cassette and card media extra</td></tr>
 </table>
 <p class="small mut">Class alternative seen only via a price aggregator (Phomemo M220, ~Rp531.400) is left off the table until verified on a merchant page.</p>
 
