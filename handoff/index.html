@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>kunjung · encounter handoff demo</title>
+<meta name="description" content="A fixed fictional encounter for testing an explicit, local handoff to Jumpa on Android. No live inbox or automatic sync.">
+<style>
+:root{color-scheme:light dark;--bg:#fafafa;--fg:#17231e;--mut:#536259;--line:#cbd6ce;--card:#fff;--accent:#086346}
+@media(prefers-color-scheme:dark){:root{--bg:#131916;--fg:#edf5ef;--mut:#b0beb4;--line:#405348;--card:#1c2821;--accent:#82dcb6}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 system-ui,sans-serif}main{max-width:700px;margin:auto;padding:24px 20px 64px}h1{font-size:1.9rem;line-height:1.2}h2{font-size:1.12rem;margin:1.4rem 0 .5rem}a{color:var(--accent);overflow-wrap:anywhere}p{margin:.7rem 0}.mut{color:var(--mut)}article{background:var(--card);border:1px solid var(--line);padding:18px;margin:24px 0}dl{margin:0}dt{font-size:.85rem;color:var(--mut);margin-top:12px}dd{margin:2px 0;overflow-wrap:anywhere}.open{display:inline-block;border:2px solid var(--accent);padding:12px 16px;font-weight:650;text-decoration:none;margin:12px 0}.open:focus-visible{outline:3px solid var(--accent);outline-offset:4px}code{overflow-wrap:anywhere}.tag{font-size:.85rem;color:var(--mut)}li{margin:.5rem 0}
+</style>
+</head>
+<body><main>
+<a href="../">← QR and printer research</a>
+<h1>kunjung → jumpa</h1>
+<p class="tag">Synthetic Android handoff prototype</p>
+<p>Try one fictional encounter. Jumpa opens an editable preview, lets you choose a demo person or create one, then waits for you to confirm Save.</p>
+<article aria-label="Fictional encounter">
+<h2 style="margin-top:0">Rani Demo</h2>
+<dl><dt>Arrival context, not proof of attendance</dt><dd>Design meetup demo invitation</dd><dt>Encounter date</dt><dd>2026-11-20 · fictional</dd><dt>Note</dt><dd>Fictional encounter for testing the handoff.</dd></dl>
+</article>
+<a class="open" href="intent://encounter/demo-v1#Intent;scheme=jumpa;package=com.vanipy.jumpa;end">Open editable preview in Jumpa</a>
+<p class="mut">Android only. Requires Jumpa 0.1.1 or newer. If your browser does not open it, check that version is installed and open this page in Chrome. Nothing has been saved just by opening this page.</p>
+<p><a href="https://github.com/irvan-putra/jumpa/releases/download/v0.1.1/jumpa-v0.1.1.apk">Install Jumpa 0.1.1 APK</a> · <a href="https://github.com/irvan-putra/jumpa/releases/tag/v0.1.1">Release and checksum</a></p>
+<h2>What happens next</h2>
+<ol><li>Review and edit the name, context, date and note in Jumpa.</li><li>Choose an existing demo person or create a new demo person. No automatic matching.</li><li>Tap <strong>Save to demo people</strong>, or cancel without adding an encounter.</li></ol>
+<p>Only Jumpa's separate fictional demo dataset can receive this test. Real people and your current demo/real display setting stay unchanged. Turn demo on in Jumpa to view the saved note. Reopening the same sample will not add it again.</p>
+<p>An invitation is not proof that someone attended. The preview keeps arrival context separate from a confirmed meeting. No chat is sent, no phone contact is edited, and nothing syncs automatically.</p>
+<h2>What this is not</h2>
+<p>Kunjung still has no live inbox. This page does not connect to Delta Chat, read contacts, create groups or carry real invite tokens. It sends only a fixed demo identifier, not editable personal data in a URL. Jumpa's affiliations, notes, promises and contact picker stay available as before.</p>
+<p><a href="https://github.com/irvan-putra/kunjung">Kunjung source</a> · <a href="https://github.com/irvan-putra/jumpa">Jumpa source and installation details</a></p>
+</main></body></html>
