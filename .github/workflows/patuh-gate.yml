@@ -1,0 +1,18 @@
+name: patuh consistency gate
+
+# Family hygiene checks from irvan-putra/patuh for this web project:
+# README, LICENSE drift, commit author, naming. Runs on every push.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-gate:
+    uses: irvan-putra/patuh/.github/workflows/release-gate.yml@64e0911598c93a7970444a9431d5b3a29bd940a3
+    with:
+      app: kunjung
+      published: false
