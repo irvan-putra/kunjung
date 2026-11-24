@@ -55,3 +55,7 @@ unbuilt inbox concept remain separate.
   replacing history, and old GitHub links redirect.
 - Built with public sources linked inline on the page; no personal data is
   published.
+
+---
+
+Built with AI assistance (Instinct and others). Not everything has been reviewed by Irvan.
